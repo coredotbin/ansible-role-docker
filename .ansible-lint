@@ -4,4 +4,8 @@ exclude_paths:
   - .github/
   - meta/
 
+warn_list:
+  # Package installs should not use latest.
+  - package-latest
+
 # vi: ft=yaml
