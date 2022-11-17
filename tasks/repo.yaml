@@ -13,8 +13,6 @@
     cmd: "curl -fsSL https://download.docker.com/linux/debian/gpg \
           | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg"
     creates: /etc/apt/keyrings/docker.gpg
-  args:
-    warn: false
 
 - name: Create the repository file
   ansible.builtin.shell:
